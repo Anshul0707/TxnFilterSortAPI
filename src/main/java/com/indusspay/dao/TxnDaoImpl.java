@@ -33,7 +33,6 @@ public class TxnDaoImpl implements TxnDao {
         try {
             return jdbcTemplate.query(sql, new Object[]{initialRange, finalRange}, new BeanPropertyRowMapper<>(Txn.class));
         } catch (Exception e) {
-            // Handle exception appropriately, e.g., log it
             e.printStackTrace();
             return new ArrayList<>();
         }

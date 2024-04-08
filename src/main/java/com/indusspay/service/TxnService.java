@@ -24,9 +24,8 @@ public class TxnService {
             }
             txnDao.save(txn);
         } catch (Exception e) {
-            // Handle exception appropriately, e.g., log it
             e.printStackTrace();
-            throw e; // Rethrow the exception for controller to handle
+            throw e;
         }
     }
 
@@ -34,9 +33,8 @@ public class TxnService {
         try {
             return txnDao.findByAmountBetween(initialRange, finalRange);
         } catch (Exception e) {
-            // Handle exception appropriately, e.g., log it
             e.printStackTrace();
-            throw e; // Rethrow the exception for controller to handle
+            throw e;
         }
     }
 
@@ -44,9 +42,8 @@ public class TxnService {
         try {
             return txnDao.findAllByOrderByAmountAsc();
         } catch (Exception e) {
-            // Handle exception appropriately, e.g., log it
             e.printStackTrace();
-            throw e; // Rethrow the exception for controller to handle
+            throw e;
         }
     }
 }
