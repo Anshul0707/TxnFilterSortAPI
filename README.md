@@ -60,7 +60,7 @@ amount.
         "gst":0.36,
         "commission":20
         }
-        ]
+ ]
 
 ```
 
@@ -90,8 +90,7 @@ amount.
         "gst":0.18,
         "commission":10
         }
-        ]
-
+ ]
 ```
 
 - Response:Status: 200 OK
